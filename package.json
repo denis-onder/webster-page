@@ -1,0 +1,19 @@
+{
+  "name": "webster-page",
+  "version": "1.0.0",
+  "description": "Webster Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennisOnder/webster-page.git"
+  },
+  "author": "Dennis Onder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DennisOnder/webster-page/issues"
+  },
+  "homepage": "https://github.com/DennisOnder/webster-page#readme"
+}
