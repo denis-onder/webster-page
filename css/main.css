@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
+.nav {
+  position: fixed;
+  left: 0;
+  width: 70px;
+  height: 100vh;
+  background-color: #BE2F2F;
+  -webkit-box-shadow: 3px 0px 13px -7px #333333;
+  -moz-box-shadow: 3px 0px 13px -7px #333333;
+  box-shadow: 3px 0px 13px -7px #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nav .nav_links {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nav .nav_links .nav_links-link {
+      text-align: center;
+      margin: 0 0 15px 0;
+      padding: 15px 0;
+      width: 100%;
+      transition: 0.2s;
+      cursor: pointer; }
+      .nav .nav_links .nav_links-link .nav_links-link-icon {
+        font-size: 32px;
+        color: #fff; }
+      .nav .nav_links .nav_links-link:hover {
+        background-color: #fff; }
+        .nav .nav_links .nav_links-link:hover .nav_links-link-icon {
+          color: #BE2F2F; }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .hero .hero_title {
+    font-size: 60px;
+    font-weight: bold;
+    border-bottom: 2px solid #BE2F2F; }
+  .hero .hero_desc {
+    font-weight: bolder;
+    font-size: 22px; }
+    .hero .hero_desc span {
+      border-bottom: 1px solid #BE2F2F; }
+  .hero .hero_arrow {
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .hero .hero_arrow .hero_arrow-text {
+      font-weight: bolder;
+      font-size: 20px;
+      border-bottom: 2px solid transparent; }
+    .hero .hero_arrow .hero_arrow-icon {
+      transition: 0.2s;
+      font-size: 28px;
+      cursor: pointer; }
+      .hero .hero_arrow .hero_arrow-icon:hover {
+        color: #BE2F2F; }
+        .hero .hero_arrow .hero_arrow-icon:hover .hero_arrow-text {
+          border-bottom-color: #BE2F2F; }
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+.contribute {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }

@@ -4,7 +4,10 @@
   "description": "Webster Page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass -w assets/scss/main.scss -o css/",
+    "browserify": "browserify js/main.js -o js/script.js",
+    "watchify": "watchify js/main.js -o js/script.js",
+    "start": "concurrently \"npm run scss\" \"npm run browserify\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/DennisOnder/webster-page/issues"
   },
-  "homepage": "https://github.com/DennisOnder/webster-page#readme"
+  "homepage": "https://github.com/DennisOnder/webster-page#readme",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "uglify-js": "^3.5.2",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "zenscroll": "^4.0.2"
+  }
 }
