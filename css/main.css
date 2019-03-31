@@ -30,11 +30,17 @@
       cursor: pointer; }
       .nav .nav_links .nav_links-link .nav_links-link-icon {
         font-size: 32px;
+        transition: 0.2s;
         color: #fff; }
       .nav .nav_links .nav_links-link:hover {
-        background-color: #fff; }
+        background-color: #dd7676; }
         .nav .nav_links .nav_links-link:hover .nav_links-link-icon {
           color: #BE2F2F; }
+
+.link--active {
+  background-color: #fff; }
+  .link--active i {
+    color: #BE2F2F !important; }
 
 .hero {
   width: 100%;

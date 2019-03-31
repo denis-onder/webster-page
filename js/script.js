@@ -14,7 +14,26 @@ for (let i = 0; i < navLinks.length; i++) {
 // Learn more button listener
 document.getElementById('arrow').addEventListener('click', function () {
     zenScroll.to(document.getElementById('about'));
-})
+});
+
+// Viewport checking
+window.onscroll = function () {
+    const elements = [document.getElementById('hero'), document.getElementById('about'), document.getElementById('contribute')];
+    for (let i = 0; i < elements.length; i++) {
+        const link = document.getElementById('link_' + elements[i].getAttribute('id'));
+        const bounding = elements[i].getBoundingClientRect();
+        link.classList.remove('link--active');
+        if (
+            bounding.top >= 0 &&
+            bounding.left >= 0 &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+            bounding.bottom <= (window.innerHeight + 200 || document.documentElement.clientHeight + 200)
+        ) {
+            link.classList.add('link--active');
+            return;
+        }
+    }
+}
 },{"zenscroll":2}],2:[function(require,module,exports){
 /**
  * Zenscroll 4.0.2

@@ -4,10 +4,10 @@
   "description": "Webster Page",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass -w assets/scss/main.scss -o css/",
+    "scss": "node-sass -w assets/scss/ -o css/",
     "browserify": "browserify js/main.js -o js/script.js",
     "watchify": "watchify js/main.js -o js/script.js",
-    "start": "concurrently \"npm run scss\" \"npm run browserify\""
+    "start": "concurrently \"npm run scss\" \"npm run watchify\""
   },
   "repository": {
     "type": "git",
