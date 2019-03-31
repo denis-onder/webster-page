@@ -12,6 +12,9 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 
 // Learn more button listener
+document.getElementById('arrow').addEventListener('click', function () {
+    zenScroll.to(document.getElementById('about'));
+})
 },{"zenscroll":2}],2:[function(require,module,exports){
 /**
  * Zenscroll 4.0.2
