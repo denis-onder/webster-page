@@ -25,14 +25,25 @@ window.onscroll = function () {
         link.classList.remove('link--active');
         if (
             bounding.top >= 0 &&
-            bounding.left >= 0 &&
-            bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
             bounding.bottom <= (window.innerHeight + 200 || document.documentElement.clientHeight + 200)
         ) {
             link.classList.add('link--active');
             return;
         }
     }
+}
+
+// Redirect links
+const redirectLinks = document.getElementsByClassName('contribute_desc-social--icon');
+for (let i = 0; i < redirectLinks.length; i++) {
+    redirectLinks[i].addEventListener('click', function () {
+        const redirectPath = redirectLinks[i].getAttribute('data-redirect');
+        if (redirectPath === 'github') {
+            window.location.replace('https://github.com/r-webdev/discord-bot');
+        } else if (redirectPath === 'discord') {
+            window.location.replace('https://discord.gg/wAacv2D');
+        }
+    })
 }
 },{"zenscroll":2}],2:[function(require,module,exports){
 /**
