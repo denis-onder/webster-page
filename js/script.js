@@ -3,7 +3,7 @@
 const zenScroll = require('zenscroll');
 
 // Zenscroll to element via navbar links
-const navLinks = document.getElementsByClassName('nav_links-link');
+const navLinks = [...document.getElementsByClassName('nav_links-link'), ...document.getElementsByClassName('nav_responsive-menu--link')];
 for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', function () {
         const elem = document.getElementById(navLinks[i].getAttribute('data-link'));
@@ -42,9 +42,26 @@ for (let i = 0; i < redirectLinks.length; i++) {
             window.location.replace('https://github.com/r-webdev/discord-bot');
         } else if (redirectPath === 'discord') {
             window.location.replace('https://discord.gg/wAacv2D');
+        } else if (redirectPath === 'reddit') {
+            window.location.replace('https://reddit.com/r/webdev');
         }
     })
 }
+
+// Responsive menu toggle
+document.getElementById('nav_responsive-button').addEventListener('click', function () {
+    document.getElementById('nav_responsive-menu').classList.toggle('menu--active');
+});
+
+
+// Global window listener to close repsonsive menu
+window.addEventListener('click', function (e) {
+    const menu = document.getElementById('nav_responsive-menu');
+    const menuIcon = document.getElementById('nav_responsive-button');
+    if (e.target !== menu && e.target !== menuIcon) {
+        menu.classList.remove('menu--active');
+    }
+});
 },{"zenscroll":2}],2:[function(require,module,exports){
 /**
  * Zenscroll 4.0.2

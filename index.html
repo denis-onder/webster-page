@@ -1,105 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <title>Webster</title>
-  </head>
 
-  <body>
-    <div class="nav" id="nav">
-      <ul class="nav_links">
-        <li id="link_hero" class="nav_links-link link--active" data-link="hero">
-          <i class="nav_links-link-icon fas fa-home"></i>
-        </li>
-        <li id="link_about" class="nav_links-link" data-link="about">
-          <i class="nav_links-link-icon far fa-question-circle"></i>
-        </li>
-        <li id="link_contribute" class="nav_links-link" data-link="contribute">
-          <i class="nav_links-link-icon fas fa-laptop-code"></i>
-        </li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <title>Webster</title>
+</head>
+
+<body>
+  <div class="nav_responsive" id="nav_responsive">
+    <i class="nav_responsive-button--icon fas fa-bars" id="nav_responsive-button"></i>
+  </div>
+  <div class="nav_responsive-menu" id="nav_responsive-menu">
+    <ul class="nav_responsive-menu--links">
+      <li class="nav_responsive-menu--link" data-link="hero">
+        <p class="nav_responsive-menu--link-text">Home</p>
+      </li>
+      <li class="nav_responsive-menu--link" data-link="about">
+        <p class="nav_responsive-menu--link-text">About</p>
+      </li>
+      <li class="nav_responsive-menu--link" data-link="contribute">
+        <p class="nav_responsive-menu--link-text">Contribute</p>
+      </li>
+    </ul>
+  </div>
+  <div class="nav" id="nav">
+    <ul class="nav_links">
+      <li id="link_hero" class="nav_links-link link--active" data-link="hero">
+        <i class="nav_links-link-icon fas fa-home"></i>
+      </li>
+      <li id="link_about" class="nav_links-link" data-link="about">
+        <i class="nav_links-link-icon far fa-question-circle"></i>
+      </li>
+      <li id="link_contribute" class="nav_links-link" data-link="contribute">
+        <i class="nav_links-link-icon fas fa-laptop-code"></i>
+      </li>
+    </ul>
+  </div>
+  <div class="hero" id="hero">
+    <h1 class="hero_title">
+      Webster
+    </h1>
+    <p class="hero_desc">
+      The official
+      <a href="https://www.reddit.com/r/webdev/" target="_blank">r/webdev</a>
+      Discord Bot.
+    </p>
+    <div class="hero_arrow">
+      <p class="hero_arrow-text">Learn more</p>
+      <i class="hero_arrow-icon fas fa-arrow-down" id="arrow"></i>
     </div>
-    <div class="hero" id="hero">
-      <h1 class="hero_title">
-        Webster
+  </div>
+  <div class="about" id="about">
+    <div class="about_desc">
+      <h1 class="about_desc-title">About Webster:</h1>
+      <p class="about_desc-text">
+        Webster is the official Discord bot used by the r/webdev community.
+      </p>
+      <p class="about_desc-text">
+        It's an on-going open-source project maintained by a community of
+        active and passionate developers.
+      </p>
+      <p class="about_desc-text">
+        Written with modularity in mind, Webster offers a really easy workflow
+        to get into for contributors and new feature implementations.
+      </p>
+      <p class="about_desc-text">
+        Currently, Webster is making up the essential core of the r/webdev
+        Discord server in regards of administration.
+      </p>
+      <p class="about_desc-text">
+        This bot is written in Node.js with a MongoDB database backing it.
+      </p>
+    </div>
+  </div>
+  <div class="contribute" id="contribute">
+    <div class="contribute_desc">
+      <h1 class="contribute_desc-title">
+        How to contribute?
       </h1>
-      <p class="hero_desc">The official <span>r/webdev</span> Discord Bot.</p>
-      <div class="hero_arrow">
-        <p class="hero_arrow-text">Learn more</p>
-        <i class="hero_arrow-icon fas fa-arrow-down" id="arrow"></i>
-      </div>
-    </div>
-    <div class="about" id="about">
-      <div class="about_desc">
-        <h1 class="about_desc-title">About Webster:</h1>
-        <p class="about_desc-text">
-          Webster is the official Discord bot used by the r/webdev community.
-        </p>
-        <p class="about_desc-text">
-          It's an on-going open-source project maintained by a community of
-          active and passionate developers.
-        </p>
-        <p class="about_desc-text">
-          Written with modularity in mind, Webster offers a really easy workflow
-          to get into for contributors and new feature implementations.
-        </p>
-        <p class="about_desc-text">
-          Currently, Webster is making up the essential core of the r/webdev
-          Discord server in regards of administration.
-        </p>
-        <p class="about_desc-text">
-          This bot is written in Node.js with a MongoDB database backing it.
-        </p>
-      </div>
-    </div>
-    <div class="contribute" id="contribute">
-      <div class="contribute_desc">
-        <h1 class="contribute_desc-title">
-          How to contribute?
-        </h1>
-        <p class="contribute_desc-text">
-          Webster is completely open-source and the entire codebase is available
-          to the public on
-          <a href="https://github.com/r-webdev/discord-bot" target="_blank"
-            >GitHub</a
-          >.
-        </p>
-        <p class="contribute_desc-text">
-          If you are interested in joining the community behind Webster, please
-          join our
-          <a href="https://discord.gg/wAacv2D" target="_blank">Discord</a>
-          server, and contact us there!
-        </p>
-        <div class="contribute_desc-social">
-          <h4 class="contribute_desc-social--title">
-            Links:
-          </h4>
-          <div class="contribute_desc-social--icons">
-            <div class="contribute_desc-social--icon" data-redirect="github">
-              <i
-                class="contribute_desc-social--icon-icon fab fa-github-square"
-              ></i>
-              <p class="contribute_desc-social--icon-text">GitHub</p>
-            </div>
-            <div class="contribute_desc-social--icon" data-redirect="discord">
-              <i class="contribute_desc-social--icon-icon fab fa-discord"></i>
-              <p class="contribute_desc-social--icon-text">Discord</p>
-            </div>
+      <p class="contribute_desc-text">
+        Webster is completely open-source and the entire codebase is available
+        to the public on
+        <a href="https://github.com/r-webdev/discord-bot" target="_blank">GitHub</a>.
+      </p>
+      <p class="contribute_desc-text">
+        If you are interested in joining the community behind Webster, please
+        join our
+        <a href="https://discord.gg/wAacv2D" target="_blank">Discord</a>
+        server, and contact us there!
+      </p>
+      <p class="contribute_desc-text">
+        You can also contact us on
+        <a href="https://discord.gg/wAacv2D" target="_blank">Reddit</a>!
+      </p>
+      <div class="contribute_desc-social">
+        <h4 class="contribute_desc-social--title">
+          Links:
+        </h4>
+        <div class="contribute_desc-social--icons">
+          <div class="contribute_desc-social--icon" data-redirect="github">
+            <i class="contribute_desc-social--icon-icon fab fa-github-square"></i>
+            <p class="contribute_desc-social--icon-text">GitHub</p>
+          </div>
+          <div class="contribute_desc-social--icon" data-redirect="discord">
+            <i class="contribute_desc-social--icon-icon fab fa-discord"></i>
+            <p class="contribute_desc-social--icon-text">Discord</p>
+          </div>
+          <div class="contribute_desc-social--icon" data-redirect="reddit">
+            <i class="contribute_desc-social--icon-icon fab fa-reddit-square"></i>
+            <p class="contribute_desc-social--icon-text">Reddit</p>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
