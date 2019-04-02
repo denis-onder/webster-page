@@ -262,7 +262,7 @@
     margin-right: 5%;
     font-size: 18px !important; } }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .contribute_desc-title,
   .about_desc-title {
     font-size: 36px !important;
